@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurboGroupMaker2K", "TurboGroupMaker2K.csproj", "{CFA40767-B079-4DE6-AF47-DA5C58A3FD6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFA40767-B079-4DE6-AF47-DA5C58A3FD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA40767-B079-4DE6-AF47-DA5C58A3FD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA40767-B079-4DE6-AF47-DA5C58A3FD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA40767-B079-4DE6-AF47-DA5C58A3FD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
