@@ -2,7 +2,8 @@
 
 var groupShuffler = new RandomGroupShuffler(args);
 
-for (var i = 1; i <= 52; i++)
+var i = 1;
+foreach (string group in groupShuffler.GetGroups())
 {
-    Console.WriteLine($"Week {i:00} - {groupShuffler.GetNext()}");
+    Console.WriteLine($"Week {i++:00} - {group}");
 }
