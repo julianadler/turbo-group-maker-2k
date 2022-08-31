@@ -4,12 +4,10 @@ namespace TurboGroupMaker2K
     {
         private const int GroupSize = 3;
         private readonly IList<string> _names;
-        private readonly Random _random;
         private readonly ISet<int> _knownGroups = new HashSet<int>();
 
         public RandomGroupShuffler(string[] names)
         {
-            _random = new Random();
             _names = names.ToList();
         }
 
@@ -26,7 +24,6 @@ namespace TurboGroupMaker2K
                 // We create random groups of two of the remaining employees
                 List<List<string>> groups = _names.Reverse()
                     .Skip(shift + 1)
-                    .OrderBy(_ => _random.Next())
                     .GroupBy(_ => index++ / (GroupSize - 1))
                     .Select(group => group.ToList())
                     .ToList();
@@ -61,7 +58,7 @@ namespace TurboGroupMaker2K
             // if the group is incomplete
             if (group.Count == GroupSize - 1)
             {
-                foreach (string name in _names.OrderBy(_ => _random.Next()))
+                foreach (string name in _names.Reverse())
                 {
                     // Copy it with an empty third member
                     var copy = new List<string>(group)
